@@ -21,7 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ma@_^d_%w+*dz&7k1&=ak6v3wk9orv^ovt_)vwz*q_isa2ys+i'
-
+import django
+django.setup()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'parsepage',
+    'parser',
 ]
 
 MIDDLEWARE = [
